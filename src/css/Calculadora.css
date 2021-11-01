@@ -1,6 +1,7 @@
 .calc-section {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .jumbotron {
@@ -8,7 +9,7 @@
   background-color: #3C4043 !important;
   padding: 5px;
   margin: 5px;
-  width: 400px;
+  width: 700px;
 }
 
 button {
