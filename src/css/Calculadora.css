@@ -1,0 +1,23 @@
+.calc-section {
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron {
+  /* background: transparent !important; */
+  background-color: #3C4043 !important;
+  padding: 5px;
+  margin: 5px;
+  width: 400px;
+}
+
+button {
+  margin: 4px !important;
+  width: 90%;
+}
+
+input[type=text] {
+  margin-left: 6px;
+  margin-top: 3px;
+  width: 96%;
+}
