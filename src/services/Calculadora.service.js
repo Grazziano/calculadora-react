@@ -29,7 +29,26 @@ function CalculadoraService() {
     return resultado;
   }
 
-  return [calcular, SOMA, SUBTRACAO, DIVISAO, MULTIPLICACAO];
+  function concatenarNumero(numeroAtual, numeroConcat) {
+    // Caso contenha apenas '0' ou null, reinicia o valor
+    if (numeroAtual === '0' || numeroAtual === null) {
+      numeroAtual = '';
+    }
+
+    // Primeiro digito for '.' concatena '0' antes do ponto
+    if (numeroConcat === '.' && numeroAtual === '0') {
+      return '0.';
+    }
+
+    // Caso '.' digitado e ja contenha um ponto, apenas retornar
+    if (numeroConcat === '.' && numeroAtual.indexOf('.') > -1) {
+      return numeroAtual;
+    }
+
+    return numeroAtual + numeroConcat;
+  }
+
+  return [calcular, concatenarNumero, SOMA, SUBTRACAO, DIVISAO, MULTIPLICACAO];
 }
 
 export default CalculadoraService;
