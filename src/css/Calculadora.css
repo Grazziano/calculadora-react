@@ -1,12 +1,14 @@
 .calc-section {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10%;
 }
 
 .jumbotron {
   /* background: transparent !important; */
-  background-color: #3C4043 !important;
+  background-color: #3c4043 !important;
   padding: 5px;
   margin: 5px;
   width: 700px;
@@ -17,7 +19,7 @@ button {
   width: 90%;
 }
 
-input[type=text] {
+input[type='text'] {
   margin-left: 6px;
   margin-top: 3px;
   width: 96%;
